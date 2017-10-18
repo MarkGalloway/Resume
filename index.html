@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Mark Galloway - Resume</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
+        <script src="https://use.fontawesome.com/91e4ce2417.js"></script>
+        <style type="text/css">
+            html {
+                box-sizing: border-box;
+
+                font-family: 'Droid Sans', sans-serif;
+
+                font-size: 16px;
+
+                --primary-color: #8E44AD;
+                /* --primary-color: #0078d7; */
+                /* --primary-color: #005a9e; */
+                /* --primary-color: #FF5A00; */
+                /* --primary-color: #5dff00; */
+            }
+            *, *:before, *:after {
+                box-sizing: inherit;
+
+            }
+
+            body {
+                margin: 0;
+            }
+
+            .page {
+                /* A4 page size */
+                position: relative;
+                width: 794px;
+                height: 1123px;
+                padding: 40px 40px;
+                background-color: #fff;
+
+                z-index: -2;
+
+                /* Guide */
+                /* border: 1px solid red; */
+            }
+
+            @media print {
+                .page {
+                    page-break-after: always;
+                }
+            }
+
+            .header {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+
+                margin-bottom: 20px;
+            }
+
+            .header::before {
+                content: '';
+                z-index: -1;
+                position: absolute;
+                top: 0;
+                right: 0;
+
+                border-left: 675px solid transparent;
+                border-top: 225px solid var(--primary-color);
+            }
+
+            .name {
+                margin-top: 30px;
+                font-size: 45px;
+            }
+
+            .last-name {
+                color: var(--primary-color);
+            }
+
+            .contact-info {
+                color: white;
+                font-weight: bold;
+            }
+
+            .contact-info div:not(:last-of-type) {
+                margin-bottom: 10px;
+            }
+
+            .contact-info a {
+                text-decoration-color: #ccc;
+                color: white;
+            }
+
+            .objective {
+                max-width: 400px;
+                margin-bottom: 20px;
+            }
+
+            .skills {
+                display: flex;
+                justify-content: center;
+            }
+
+            .skills-left {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+
+                margin-right: 10px;
+                font-weight: bold;
+            }
+
+            .skills-right {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            section:not(:last-of-type)::after {
+                content: '';
+                display: block;
+                -webkit-margin-before: 1em;
+                -webkit-margin-after: 1em;
+                -webkit-margin-start: 3.5em;
+                -webkit-margin-end: 3.5em;
+                border-style: inset;
+                border-width: 1px;
+            }
+
+            h2 {
+                margin: 0;
+                margin-bottom: 5px;
+
+                font-size: 20px;
+                color: var(--primary-color);
+            }
+
+            h2 > i.fa {
+                margin-right: 5px;
+            }
+
+            .bold {
+                font-weight: bold;
+            }
+
+            .date-range {
+                color: #666;
+                font-size: 0.75rem;
+            }
+
+            .employment-item:not(:last-child), .education-item:not(:last-child) {
+                margin-bottom: 10px;
+            }
+
+            .item-header {
+                display: flex;
+                margin-bottom: 5px;
+            }
+
+            .company {
+                min-width: 300px;
+            }
+
+            .title {
+                flex: 2;
+                font-weight: bold;
+            }
+
+            ul {
+                margin: 0;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <!-- <div class="page">
+            <div class="header">
+                <div></div>
+                <div class="contact-info">
+                    <div><i class="fa fa-envelope fa-fw fa-lg" aria-hidden="true"></i><a href="mailto:mgallowa@ualberta.ca">Mark.Galloway@ualberta.ca</a></div>
+                    <div><i class="fa fa-phone fa-fw fa-lg" aria-hidden="true"></i><a href="tel:5879860994">(587) 986-0994</a></div>
+                    <div><i class="fa fa-github fa-fw fa-lg" aria-hidden="true"></i><a href="https://github.com/MarkGalloway">MarkGalloway</a></div>
+                </div>
+            </div>
+        </div> -->
+        <div class="page">
+            <div class="header">
+                <div class="name">Mark <span class="last-name">Galloway</span></div>
+                <div class="contact-info">
+                    <div><i class="fa fa-envelope fa-fw fa-lg" aria-hidden="true"></i><a href="mailto:mgallowa@ualberta.ca">Mark.Galloway@ualberta.ca</a></div>
+                    <div><i class="fa fa-phone fa-fw fa-lg" aria-hidden="true"></i><a href="tel:5879860994">(587) 986-0994</a></div>
+                    <div><i class="fa fa-github fa-fw fa-lg" aria-hidden="true"></i><a href="https://github.com/MarkGalloway">MarkGalloway</a></div>
+                </div>
+            </div>
+            <div class="objective">
+                Experienced software developer seeking a senior role within a growing and innovative tech company
+            </div>
+            <section>
+                <div class="skills">
+                    <div class="skills-left">
+                        <div>I write code in</div>
+                        <div>I have built things with</div>
+                        <div>I store data in</div>
+                        <div>I have deployed things using</div>
+                        <div>I use tools like</div>
+                        <div>I'm interested in</div>
+                    </div>
+                    <div class="skills-right">
+                        <div>Python, Javascript/ES6+, HTML, CSS</div>
+                        <div>React/Redux, Django, Flask, jQuery</div>
+                        <div>PostgreSQL, MongoDB, Redis, Memcached</div>
+                        <div>Docker, Saltstack, EC2, S3, ELB, SQS, RabbitMQ, Celery</div>
+                        <div>Git, Webpack, Babel, Less/Sass</div>
+                        <div>React Native, GraphQL, CockroachDB</div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2><i class="fa fa-briefcase fa-fw" aria-hidden="true"></i>Experience</h2>
+                <div class="employment-item">
+                    <div class="item-header">
+                        <div class="company"><span class="bold">Go Auto</span>, Edmonton</div>
+                        <div class="title">Software Developer</div>
+                        <div class="date-range">AUG 2016 - PRESENT</div>
+                    </div>
+                    <ul>
+                        <li>Fullstack development of an internal CRM used by 30+ car dealerships.</li>
+                        <li>Lead development of a Progressive Web App to assist sales staff with appraisals and SMS.</li>
+                        <li>Mentorship of junior developers in coding, software design, and best practices.</li>
+                    </ul>
+                </div>
+                <div class="employment-item">
+                    <div class="item-header">
+                        <div class="company"><span class="bold">Chillabit</span>, Palo Alto</div>
+                        <div class="title">Technical Cofounder</div>
+                        <div class="date-range">MAY 2015 - AUG 2016</div>
+                    </div>
+                    <ul>
+                        <li>Led development of backend, API, and notification services.</li>
+                        <li>Implemented autoscaling cloud architecture with automated deployments.</li>
+                        <li>Attended YCombinator in winter 2016.</li>
+                    </ul>
+                </div>
+                <div class="employment-item">
+                    <div class="item-header">
+                        <div class="company"><span class="bold">No Lemon</span>, Edmonton</div>
+                        <div class="title">Technical Cofounder</div>
+                        <div class="date-range">JAN 2015 - SEPT 2015</div>
+                    </div>
+                    <ul>
+                        <li>Student startup aimed at solving pain points in the used car sales market.</li>
+                        <li>Fullstack web development for both client-facing and internal tools.</li>
+                    </ul>
+                </div>
+                <div class="employment-item">
+                    <div class="item-header">
+                        <div class="company"><span class="bold">Umple</span>, Remote</div>
+                        <div class="title">Open Source Contributor</div>
+                        <div class="date-range">SEPT 2014 - DEC 2014</div>
+                    </div>
+                    <ul>
+                        <li>Added features to the parser, metamodel, and template engine of a Java based compiler.</li>
+                        <li>Participated as part of a distributed development team.</li>
+                    </ul>
+                </div>
+                <div class="employment-item">
+                    <div class="item-header">
+                        <div class="company"><span class="bold">Pason Systems</span>, Calgary</div>
+                        <div class="title">Software Developmer Intern</div>
+                        <div class="date-range">MAY 2013 - AUG 2014</div>
+                    </div>
+                    <ul>
+                        <li>Developed, enhanced, and refactored applications using C#, C++, and .NET.</li>
+                        <li>Created automated testing framework using Ranorex.</li>
+                    </ul>
+                </div>
+            </section>
+            <section>
+                <h2><i class="fa fa-graduation-cap fa-fw" aria-hidden="true"></i>Education</h2>
+                <div class="education-item">
+                    <div class="item-header">
+                        <div class="company"><span class="bold">University of Alberta</span>, Edmonton</div>
+                        <div class="title">B.Sc Honors Computing Science</div>
+                        <div class="date-range">SEPT 2010 - MAY 2015</div>
+                    </div>
+                    <ul>
+                        <li>First Class Honors</li>
+                        <li>Dean's Silver Medal in Science</li>
+                        <li>Barry J. Mailloux Prize in Computing Science</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>
